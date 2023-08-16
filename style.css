@@ -1,3 +1,6 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+}
 
 .container-fluid{
     background-color: white;
@@ -8,7 +11,7 @@
 }
 
 .custom-background {
-    height: 60vh;
+    height: 70vh;
     position: relative;
     background-image: url('images/pexels-julia-m-cameron-6994944.jpg');
     background-size: cover;
@@ -29,15 +32,17 @@
     
 }
 #logo,
-h1{
+h1,
+.btn{
     z-index: 10;
+    
 }
 
 h1{
     padding-top: 50px;
-    font-size: 70px;
-    color: white;
-    font-weight: 500 ;
+    font-size: 60px;
+    color: rgb(16, 16, 16);
+    font-weight: 700 ;
 }
 
 .navbar {
@@ -46,9 +51,54 @@ h1{
 }
 
 .about-us{
+    text-align: center;
     padding: 30px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-color: rgba(254, 227, 241, 0.626);
 }
 
 .about-us p{
+    text-align: center;
+}
+.btn{
+    margin-bottom: 40px;
+    color: white;
+    background-color: #C7166F;
+    border-color: #C7166F;
+    font-weight: 500;
+    
+}
+
+.btn::after,
+.btn:hover{
+    color: white;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.angels{
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+.donate{
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50vw;
+    height: 2px;
+    background-color: #C7166F;
+    margin: 10px auto; /* Adjust spacing */
+}
+.contact{
     text-align: center;
 }
