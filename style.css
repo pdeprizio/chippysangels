@@ -11,7 +11,7 @@
 }
 
 .custom-background {
-    height: 72vh;
+    height: 70vh;
     position: relative;
     background-image: url('images/pexels-julia-m-cameron-6994944.jpg');
     background-size: cover;
@@ -25,24 +25,32 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(209, 209, 209, 0.44); 
+    background-color: rgba(209, 209, 209, 0.704); 
 }
 #logo{
-    max-width: 500px;
+    max-width: 300px;
+    margin-right: 5px;
     
 }
 #logo,
 h1,
-.btn{
-    z-index: 10;
-    
+.btn,
+a
+
+{
+    z-index: 10; 
 }
 
+
+.nav-link-donate,
+.nav-link-help{
+    color:#C7166F;
+}
 h1{
     padding-top: 50px;
     font-size: 60px;
     color: rgb(0, 0, 0);
-    font-weight: 700 ;
+    font-weight: 500 ;
 }
 
 .navbar {
@@ -53,29 +61,34 @@ h1{
 .about-us{
     text-align: center;
     padding: 30px;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    background-color: rgba(254, 227, 241, 0.626);
+    
+    background-color: rgba(255, 255, 255, 0.863);
 }
 
 .home-aboutus{
     height: 20vh;
-    background-color: #C7166F;
+    background-color: rgba(247, 241, 244, 0.626);
     
 }
 
-.home-aboutus h1{
-    color: white;
+.home-aboutus h1,
+{
+    
+    font-weight: 400;
 }
 
+.home-angels{
+    background-color: black;
+    
+}
 .about-us p{
     text-align: center;
 }
 .btn{
-    margin-bottom: 40px;
+    margin-top: 30px;
     color: white;
-    background-color: #C7166F;
-    border-color: #C7166F;
+    background-color: #000000;
+    border-color: #ed0076;
     font-weight: 500;
     
 }
@@ -87,27 +100,39 @@ h1{
     border-color: #000000;
 }
 
+
+/*  Angels   */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; /* Adjust the gap between images */
+  }
+  
 .angels{
-    margin-top: 50px;
+    background: #e8a8c87c;
     text-align: center;
     padding: 30px;
-    background-color: #C7166F;
-    color: white;
+    
+
 }
 
-.angels img{
-    width: 50%;
-    height: 30%;
-    margin-bottom: 3%;
+.angelimg{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 4%;
 }
 
-
+.reviews{
+    text-align: center;
+}
 
 .donate{
-    margin-top: 50px;
+    margin-top: 0px;
     text-align: center;
     padding: 30px;
-    background-color: #c7166e4c;
+    background-color: #ffffff;
 }
 
 h2::after {
@@ -116,12 +141,13 @@ h2::after {
     width: 50vw;
     height: 2px;
     background-color: #C7166F;
-    margin: 10px auto; /* Adjust spacing */
+    margin: 10px auto; 
 }
+
 .contact{
     text-align: center;
     height: 40vh;
-    background: #f7f0f0;
+    background-color: rgba(255, 255, 255, 0.626);
     padding-top: 20px;
 
 }
@@ -130,6 +156,8 @@ h2::after {
 .carousel{
    max-width: 70%;
    max-height: 50%;
+   padding: 10px;
+   margin-bottom: 10px;
 }
 
 
@@ -176,6 +204,7 @@ footer{
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
+    z-index: 1000;
 }
 .socials li{
     margin: 0 10px;
