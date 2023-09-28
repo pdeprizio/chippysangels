@@ -67,14 +67,15 @@ h1{
 
 .home-aboutus{
     height: 20vh;
-    background-color: rgba(247, 241, 244, 0.626);
+    background-color: rgba(247, 241, 244, 0.413);
     
 }
 
-.home-aboutus h1,
-{
+.home-aboutus h2{
+    margin-top: 40px;
+    font-weight: 300;
+    font-size: 50px;
     
-    font-weight: 400;
 }
 
 .home-angels{
@@ -83,9 +84,11 @@ h1{
 }
 .about-us p{
     text-align: center;
+    margin: 20px;
+    padding: 10px;
 }
 .btn{
-    margin-top: 30px;
+    margin-top: 20px;
     color: white;
     background-color: #000000;
     border-color: #ed0076;
@@ -99,6 +102,20 @@ h1{
     background-color: #000000;
     border-color: #000000;
 }
+.photos {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+.photos img {
+    width: 350px;
+    margin: 5px;
+}
+
 
 
 /*  Angels   */
@@ -110,7 +127,7 @@ h1{
   }
   
 .angels{
-    background: #e8a8c87c;
+    background: #efeaea;
     text-align: center;
     padding: 30px;
     
@@ -146,12 +163,23 @@ h2::after {
 
 .contact{
     text-align: center;
-    height: 40vh;
+    height: 30vh;
     background-color: rgba(255, 255, 255, 0.626);
     padding-top: 20px;
 
 }
+.abtus {
+  height: 40vh;
+}
 
+.contact h2, .home-aboutus h2{
+    font-weight: 300;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+    
+}
 
 .carousel{
    max-width: 70%;
